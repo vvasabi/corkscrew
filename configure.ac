@@ -1,7 +1,11 @@
-AC_INIT(corkscrew.c)
-AM_INIT_AUTOMAKE(corkscrew, 2.0)
+AC_INIT([corkscrew.c], [2.0])
+AC_CONFIG_SRCDIR([corkscrew.c])
 AM_CONFIG_HEADER(config.h:config.in)
-AM_C_PROTOTYPES
+AM_INIT_AUTOMAKE
+#AM_C_PROTOTYPES
+#AC_C_PROTOYPES
+AC_HEADER_STDC
+AC_CHECK_HEADERS([string.h])
 
 AC_PROG_CC
 AC_PROG_AWK
@@ -30,3 +34,4 @@ dnl check for working const (hpux)
 AC_C_CONST
 
 AC_OUTPUT(Makefile)
+

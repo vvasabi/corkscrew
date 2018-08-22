@@ -1,0 +1,9 @@
+autom4te.cache
+configure
+Makefile
+config.h
+config.log
+config.status
+stamp-h1
+*.o
+corkscrew
